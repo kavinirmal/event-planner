@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainFragments.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E5E5E5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:background="#187BCD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/montserrat"
+                android:text="Profile"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_marginTop="20sp"
+                android:src="@drawable/user_prof"
+                app:layout_constraintStart_toStartOf="@+id/textView8"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Jhone Albert"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/circleImageView"
+                app:layout_constraintTop_toTopOf="@+id/circleImageView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Event Planner"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25sp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="25sp"
+            android:background="@drawable/card_bg"
+            android:orientation="vertical"
+            android:paddingBottom="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/montserrat"
+                android:text="Name"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/montserrat"
+                android:text="Email"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/montserrat"
+                android:text="Phone"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/montserrat"
+                android:text="Address"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/montserrat"
+                android:text="Joined"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="100sp"
+            android:background="@drawable/blue_btn_bg"
+            android:fontFamily="@font/montserrat"
+            android:text="update"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>
