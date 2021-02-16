@@ -1,5 +1,6 @@
 package com.example.hakunamatata.mainFragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,10 +10,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.hakunamatata.R;
 import com.example.hakunamatata.adapters.OfferAdapter;
 import com.example.hakunamatata.dto.OfferDto;
+import com.example.hakunamatata.ui.OfferDetailsActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +30,8 @@ public class HomeFragment extends Fragment {
     RecyclerView recyclerView;
     OfferAdapter offerAdapter;
     List<OfferDto> mData;
+
+    Button btn_new_offer;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -75,6 +80,19 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
         recyclerView = view.findViewById(R.id.rv_offer);
+        btn_new_offer = view.findViewById(R.id.btn_new);
+        btn_new_offer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), OfferDetailsActivity.class);
+                startActivity(intent);
+            }
+        });
+        LoadData();
+        return view;
+    }
+
+    private void LoadData() {
         mData = new ArrayList<>();
         mData.add(new OfferDto("Photography","Birthday party, wedding , home comming and any ocassion Birthday party, wedding ,   and any ocassiondg. gsdgrgbef rgrgrgrf"));
         mData.add(new OfferDto("Photography","Birthday party, wedding , home comming and any ocassion."));
@@ -86,6 +104,5 @@ public class HomeFragment extends Fragment {
         offerAdapter = new OfferAdapter(getActivity(),mData);
         recyclerView.setAdapter(offerAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        return view;
     }
 }

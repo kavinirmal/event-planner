@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.FragmentActivity"></activity>
+        <activity android:name=".ui.OrderDetailsActivity"></activity>
+        <activity android:name=".ui.OfferDetailsActivity" />
+        <activity android:name=".ui.FragmentActivity" />
         <activity android:name=".ui.ForgetPasswordActivity" />
         <activity android:name=".ui.HomeActivity" />
         <activity android:name=".ui.SignUpActivity" />
