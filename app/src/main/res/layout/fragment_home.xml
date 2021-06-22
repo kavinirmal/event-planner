@@ -21,6 +21,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/card_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/studioone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
@@ -28,7 +47,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:text="HAKUNA MATATA"
+            android:text="STUDIO ONE"
             android:textColor="#ffffff"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -40,11 +59,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat"
-            android:text="Event Planners"
+            android:text="Educational Podcaster"
             android:textColor="#ffffff"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@+id/textView5"
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
@@ -53,35 +73,42 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20sp"
         android:layout_marginLeft="20sp"
-        android:layout_marginTop="30sp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/montserrat"
-        android:text="My Offers"
+        android:text="Subjects"
         android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
-    <Button
-        android:id="@+id/btn_new"
-        android:layout_width="120sp"
-        android:layout_height="30sp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/btn_bg"
-        android:text="New"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:fontFamily="@font/montserrat"
-        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/search_bg"
+        app:layout_constraintBottom_toTopOf="@+id/rv_offer"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView6" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:hint="Search..."
+            android:background="@android:color/transparent"/>
+
+
+
+    </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_offer"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="80dp"
         android:layout_marginBottom="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

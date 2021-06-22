@@ -7,9 +7,7 @@
     tools:context=".mainFragments.ProfileFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -44,7 +42,7 @@
                 android:layout_width="100sp"
                 android:layout_height="100sp"
                 android:layout_marginTop="20sp"
-                android:src="@drawable/user_prof"
+                android:src="@drawable/name"
                 app:layout_constraintStart_toStartOf="@+id/textView8"
                 app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
@@ -56,7 +54,7 @@
                 android:layout_marginLeft="20sp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/montserrat"
-                android:text="Jhone Albert"
+                android:text=""
                 android:textColor="#ffffff"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -67,9 +65,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat"
-                android:text="Event Planner"
+                android:text="Student Profile"
                 android:textColor="#ffffff"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@+id/textView9"
                 app:layout_constraintTop_toBottomOf="@+id/textView9" />
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -100,6 +98,7 @@
                 android:textStyle="bold" />
 
             <EditText
+                android:id="@+id/et_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20sp"
@@ -120,6 +119,7 @@
                 android:textStyle="bold" />
 
             <EditText
+                android:id="@+id/et_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20sp"
@@ -140,46 +140,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20sp"
-                android:layout_marginRight="20sp"
-                android:fontFamily="@font/montserrat"
-                android:textColor="#000000"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20sp"
-                android:layout_marginTop="20sp"
-                android:fontFamily="@font/montserrat"
-                android:text="Address"
-                android:textColor="#000000"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20sp"
-                android:layout_marginRight="20sp"
-                android:fontFamily="@font/montserrat"
-                android:textColor="#000000"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20sp"
-                android:layout_marginTop="20sp"
-                android:fontFamily="@font/montserrat"
-                android:text="Joined"
-                android:textColor="#000000"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-
-            <EditText
+                android:id="@+id/et_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20sp"
@@ -191,20 +152,28 @@
         </LinearLayout>
 
         <Button
-            android:layout_width="150sp"
+            android:id="@+id/btn_update"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:layout_marginBottom="100sp"
+            android:layout_marginEnd="25dp"
             android:background="@drawable/blue_btn_bg"
             android:fontFamily="@font/montserrat"
             android:text="update"
             android:textColor="#ffffff"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
 
+        <Button
+            android:id="@+id/bt_logOut"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/border_btn"
+            android:text="log out"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_update"
+            app:layout_constraintEnd_toStartOf="@+id/btn_update" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

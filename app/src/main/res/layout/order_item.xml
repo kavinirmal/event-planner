@@ -12,10 +12,12 @@
 
     <TextView
         android:id="@+id/tv_order"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20sp"
         android:layout_marginLeft="20sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginTop="20sp"
         android:fontFamily="@font/montserrat"
         android:text="Offer Name"
@@ -27,28 +29,16 @@
 
     <TextView
         android:id="@+id/tv_date"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
         android:text="Date"
         android:textColor="#000000"
         android:textSize="10sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_order" />
-
-    <Button
-        android:id="@+id/btn_view_order"
-        android:layout_width="100sp"
-        android:layout_height="30sp"
-        android:layout_marginEnd="20sp"
-        android:layout_marginRight="20sp"
-        android:background="@drawable/border_btn"
-        android:fontFamily="@font/montserrat"
-        android:text="View"
-        android:textColor="#187BCD"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_date"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv_order" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

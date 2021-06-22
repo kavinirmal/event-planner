@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "820044955379",
+    "project_id": "srudioone-9f0d3",
+    "storage_bucket": "srudioone-9f0d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820044955379:android:80ab5aabf5cfeaed76c186",
+        "android_client_info": {
+          "package_name": "com.dreams.hakunamatata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820044955379-oga0dabrvn2jq1vl7jvahvnto7puovrl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCASXrgO_6qY3L0Ouau_OrfDCa2cBJUwZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "820044955379-oga0dabrvn2jq1vl7jvahvnto7puovrl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820044955379:android:f56cf6a7bc11c08e76c186",
+        "android_client_info": {
+          "package_name": "com.example.hakunamatata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820044955379-oga0dabrvn2jq1vl7jvahvnto7puovrl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCASXrgO_6qY3L0Ouau_OrfDCa2cBJUwZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "820044955379-oga0dabrvn2jq1vl7jvahvnto7puovrl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

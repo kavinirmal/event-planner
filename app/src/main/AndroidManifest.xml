@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.hakunamatata">
+    package="com.dreams.hakunamatata">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,14 +10,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".ui.OrderDetailsActivity"></activity>
-        <activity android:name=".ui.OfferDetailsActivity" />
-        <activity android:name=".ui.FragmentActivity" />
-        <activity android:name=".ui.ForgetPasswordActivity" />
-        <activity android:name=".ui.HomeActivity" />
-        <activity android:name=".ui.SignUpActivity" />
-        <activity android:name=".ui.MainActivity">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.dreams.hakunamatata.ui.PdfListActivity"></activity>
+        <activity android:name="com.dreams.hakunamatata.ui.PdfViewActivity" />
+        <activity android:name="com.dreams.hakunamatata.ui.LessonsActivity" />
+        <activity android:name="com.dreams.hakunamatata.ui.MainActivity" />
+        <activity android:name="com.dreams.hakunamatata.ui.FragmentActivity" />
+        <activity android:name="com.dreams.hakunamatata.ui.ForgetPasswordActivity" />
+        <activity android:name="com.dreams.hakunamatata.ui.SignUpActivity" />
+        <activity android:name="com.dreams.hakunamatata.ui.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

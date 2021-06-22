@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/card_bg"
+    android:background="@drawable/gradient_bg"
     android:layout_marginBottom="5sp"
     android:layout_marginTop="5sp"
     android:layout_marginLeft="20sp"
@@ -13,10 +13,12 @@
 
     <TextView
         android:id="@+id/tv_offer"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20sp"
         android:layout_marginLeft="20sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
         android:layout_marginTop="20sp"
         android:fontFamily="@font/montserrat"
         android:text="Offer Name"
@@ -39,6 +41,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_offer" />
 
+    <TextView
+        android:id="@+id/tv_permission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Permission Required"
+        android:textColor="#ff0000"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_view_offer"
+        app:layout_constraintStart_toStartOf="@+id/tv_description" />
+
     <Button
         android:id="@+id/btn_view_offer"
         android:layout_width="100sp"
@@ -49,7 +61,7 @@
         android:layout_marginRight="20sp"
         android:background="@drawable/border_btn"
         android:fontFamily="@font/montserrat"
-        android:text="Edit"
+        android:text="View"
         android:textColor="#187BCD"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

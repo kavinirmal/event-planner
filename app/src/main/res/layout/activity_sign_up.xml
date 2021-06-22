@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/cv_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -30,7 +32,7 @@
             android:layout_marginRight="0dp"
             android:textAlignment="viewStart"
             android:textSize="20sp"
-            android:text="HAKUNA MATATA"
+            android:text="STUDIO ONE"
             android:textColor="#ffffff"
             app:layout_constraintEnd_toEndOf="parent"
             android:gravity="center_horizontal"
@@ -105,49 +107,13 @@
             android:hint="Email"
             android:inputType="textEmailAddress"
             android:textSize="15sp" />
-        <EditText
-            android:id="@+id/et_nic"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/et_email"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="29dp"
-            android:layout_marginLeft="29dp"
-            android:layout_marginTop="5sp"
-            android:layout_marginEnd="31dp"
-            android:layout_marginRight="31dp"
-            android:drawableLeft="@drawable/nic"
-            android:ems="10"
-            android:hint="NIC"
-            android:inputType="textPersonName"
-            android:textSize="15sp" />
-        <EditText
-            android:id="@+id/et_birth"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/et_nic"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="29dp"
-            android:layout_marginLeft="29dp"
-            android:layout_marginTop="5sp"
-            android:layout_marginEnd="31dp"
-            android:layout_marginRight="31dp"
-            android:drawableLeft="@drawable/date"
-            android:ems="10"
-            android:hint="Date"
-            android:inputType="date"
-            android:textSize="15sp" />
+
+
         <EditText
             android:id="@+id/et_phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/et_birth"
+            android:layout_below="@+id/et_email"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentEnd="true"
@@ -162,30 +128,12 @@
             android:hint="Phone"
             android:inputType="phone"
             android:textSize="15sp" />
-        <EditText
-            android:id="@+id/et_address"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/et_phone"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="29dp"
-            android:layout_marginLeft="29dp"
-            android:layout_marginTop="5sp"
-            android:layout_marginEnd="31dp"
-            android:layout_marginRight="31dp"
-            android:drawableLeft="@drawable/address"
-            android:ems="10"
-            android:hint="Address"
-            android:inputType="textPersonName"
-            android:textSize="15sp" />
+
         <EditText
             android:id="@+id/et_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/et_address"
+            android:layout_below="@+id/et_phone"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentEnd="true"
@@ -255,15 +203,26 @@
             android:gravity="center_horizontal"
             android:text="TextView"
             android:textAlignment="center" />
-
-
-
-
-
-
-
-
-
     </RelativeLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/studioone"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Educational podcaster"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
